@@ -2,7 +2,7 @@ pipeline {
   agent {
     docker {
       label 'linux'
-      image 'golang:1.25.0-trixie'
+      image 'golang:1.25.1-trixie'
       args '-v /etc/ssl/certs:/etc/ssl/certs:ro'
     }
   }
